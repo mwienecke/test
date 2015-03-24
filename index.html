@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>3D Hemd mehrere Objekte in der Scene</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				font-family:Arial;
+				background-color: #fff;
+				color: #000;
+				margin: 0px;
+				overflow: hidden;
+			}
+		</style>
+		<!-- Frameworks -->
+		<script type="text/javascript" src="js/three.min.js"></script>
+		<script type="text/javascript" src="js/Detector.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script type="text/javascript" src="js/OrbitControls.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/TrackballControls.js"></script>
+		<script type="text/javascript" src="js/CanvasRenderer.js"></script>
+		<script type="text/javascript" src="js/Projector.js"></script>
+<!-- 		<script type="text/javascript" src="js/KeyboardState.js"></script> -->
+ 		<script type="text/javascript" src="js/Tween.js"></script> -->
+<!-- 		<script type="text/javascript" src="js/tween.min.js"></script> -->
+		<!-- ausgelagerte Funktionen -->
+				
+		<script type="text/javascript" src="js/frame.js"></script>
+	
+		<script type="text/javascript" src="js/function.js"></script>
+		<script type="text/javascript" src="js/insert.js"></script>
+		
+		
+		<script>
+		$( document ).ready(function() {
+		    var mesh, scene, camera, control, renderer;
+		    var meincube;
+			var canv;
+			var texture;
+			var cube;
+			
+			init();
+			animate();
+			});	
+			</script>
+		</head>
+
+	<body align= "center" style="width: 100%; height: 100%;">		
+	<div align="center" id="3dview" style="width: 75%; height: 75%; position: absolute;">
+	</div>
+	</body>
+</html>
